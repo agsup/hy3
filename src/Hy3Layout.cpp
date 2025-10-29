@@ -915,7 +915,7 @@ void Hy3Layout::shiftWindow(
 ) {
 	auto* node = this->getWorkspaceFocusedNode(workspace);
 	if (node == nullptr) {
-		shiftMonitor(&node, direction, true)
+		shiftMonitor(*node, direction, true)
 		return;
 	}
 
